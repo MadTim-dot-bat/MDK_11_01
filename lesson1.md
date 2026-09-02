@@ -48,7 +48,7 @@
 # МОДЕЛИ ЖИЗНЕННОГО ЦИКЛА ПО
 1. Каскадная (водопадная) модель\
 Состоит из этапов выше и идут последовательно (как водопад). Является устаревшей моделью
-![Каскадная модель](<img width="1552" height="814" alt="image" src="https://github.com/user-attachments/assets/5edee42e-cba5-4d18-8a6b-5deb31bcafeb" />)
+<img width="1552" height="814" alt="image" src="https://github.com/user-attachments/assets/5edee42e-cba5-4d18-8a6b-5deb31bcafeb" />
 
 
 Плюсы:
