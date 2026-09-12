@@ -1,10 +1,13 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <algorithm>
 using std::cout;
 using std::cin;
 using std::string;
 using std::vector;
+using std::sort;
+/*Пришлось вставить функцию task_1 т.к она конфликтовала с task_2*/
 
 /*void task_1(){
 	string password;
@@ -46,7 +49,7 @@ else {
 }
 }*/
 
-char get_digit(char c) {
+/*char get_digit(char c) {
 	if (c == 'b' or c == 'f' or c == 'p' or c == 'v') return '1';
 	if (c == 'c' or c == 'g' or c == 'j' or c == 'k' or c == 'q' or c == 's' or c == 'x' or c == 'z') return '2';
 	if (c == 'd' or c == 't') return '3';
@@ -79,8 +82,39 @@ void task_2() {
 		result += '0';
 	}
 	cout << result;
+}*/
+/*void task_3() {
+	int n;
+	cout << "Enter guests seats: ";
+	cin >> n;
+	vector<int> a(n + 1);
+	for (int b = 1; b <= n; ++b) {
+		int seat;
+		cin >> seat;
+		a[seat] = b;
+	}
+	for (int i = 1; i <= n; ++i) {
+		cout << a[i];
+		if (i < n) {
+			cout << " ";
+		}
+	}*/
+
 }
+/*void task_4() {
+	vector<char> backwards;
+	cout << "Enter a line:";
+	for (size_t i = 0; i != backwards.size(); i++) {
+		cin >> backwards[i];
+	}
+	cousort(backwards.rbegin(), backwards.rend());
+	}
+	не работает и впринципе недописан...
+	*/
+
 int main(){
 	/*task_1();*/
-	task_2();
+	/*task_2();*/
+	/*task_3();*/
+	/*task_4();*/
 }
