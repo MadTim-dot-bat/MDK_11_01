@@ -100,21 +100,42 @@ void task_2() {
 		}
 	}*/
 
+void task_5() {
+	string input;
+	if (!std::getline(cin, input)) {
+		cout << 'YES';
+	}
+	vector<char> filt_chars;
+	for (char c : input) {
+		if (c != ' ') {
+			filt_chars.push_back(c);
+		}
+	}
+	bool pal = true;
+	if (!filt_chars.empty()) {
+		size_t left = 0;
+		size_t right = filt_chars.size() - 1;
+		while (left < right) {
+			if (filt_chars[left] != filt_chars[right]) {
+				pal = false;
+				break;
+			}
+			left++;
+			right--;
+		}
+		}
+	if (pal) {
+		cout << "Yes";
+	}
+	else {
+		cout << "No";
+	}
 }
-/*void task_4() {
-	vector<char> backwards;
-	cout << "Enter a line:";
-	for (size_t i = 0; i != backwards.size(); i++) {
-		cin >> backwards[i];
-	}
-	cousort(backwards.rbegin(), backwards.rend());
-	}
-	не работает и впринципе недописан...
-	*/
+
 
 int main(){
 	/*task_1();*/
 	/*task_2();*/
 	/*task_3();*/
-	/*task_4();*/
+	task_5();
 }
